@@ -51,7 +51,7 @@
     "react-cosmos-router-proxy": "^4.2.1",
     "react-cosmos-telescope": "^4.4.0",
     "react-cosmos-test": "^4.4.0",
-    "react-dates": "^16.6.1",
+    "react-dates": "^17.0.0",
     "react-dom": "^16.2.0",
     "react-loadable": "^5.3.1",
     "react-media": "^1.8.0",
