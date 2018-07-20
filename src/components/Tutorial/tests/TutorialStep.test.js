@@ -34,6 +34,8 @@ describe('TutorialStep', () => {
     expect(stepShown('Z')).toBeTruthy();
 
     expect(harness.find('.nextBtn').exists()).toBeFalsy();
+
+    harness.unmount();
   });
 
   it('Should allow dismissing', () => {
@@ -48,6 +50,8 @@ describe('TutorialStep', () => {
 
     expect(stepShown('A')).toBeFalsy();
     expect(stepShown('Z')).toBeFalsy();
+
+    harness.unmount();
   });
 
   it('should follow its target element', () => {
@@ -59,5 +63,7 @@ describe('TutorialStep', () => {
         .closest('.outer')
         .prop('style'),
     ).toMatchSnapshot();
+
+    harness.unmount();
   });
 });
