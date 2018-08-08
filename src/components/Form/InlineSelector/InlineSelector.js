@@ -18,6 +18,7 @@ type Option = {
 type Props = {
   id: string,
   name: string,
+  disabled?: boolean,
   className?: string,
   label?: string,
   vertical?: boolean,
@@ -30,17 +31,20 @@ class InlineSelector extends React.Component<Props> {
   static defaultProps = {
     vertical: false,
     options: [],
+    disabled: false,
     onChange: () => null,
   };
 
   handleClick = (option: Option) => {
-    const oldValue = this.props.value;
+    if (!this.props.disabled) {
+      const oldValue = this.props.value;
 
-    if (oldValue !== option.value) {
-      this.props.onChange({
-        value: option.value,
-        props: this.props,
-      });
+      if (oldValue !== option.value) {
+        this.props.onChange({
+          value: option.value,
+          props: this.props,
+        });
+      }
     }
   };
 
@@ -53,6 +57,7 @@ class InlineSelector extends React.Component<Props> {
       options,
       value,
       vertical,
+      disabled,
       ...restProps
     } = this.props;
     const classes = classnames(
@@ -60,6 +65,7 @@ class InlineSelector extends React.Component<Props> {
       {
         [style.vertical]: vertical,
       },
+      disabled && style.disabled,
       className,
     );
 

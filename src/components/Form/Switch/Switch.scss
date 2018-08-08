@@ -1,0 +1,88 @@
+@import '../../../styles/base';
+
+.outer {
+  position: relative; width: 2.750em;
+  user-select:none; 
+  margin: 10px;
+}
+
+.switchLabel {
+  display: block; 
+  overflow: hidden; 
+  cursor: pointer;
+  border-radius: 2.500em;
+}
+.switchInner {
+  display: block; 
+  width: 200%; 
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.switchInner:before, .switchInner:after {
+  display: block; 
+  float: left; 
+  width: 50%; 
+  height: 1.375em; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+.switchInner:before {
+  content: "";
+  padding-left: 0.875em;
+  background-color: $green;
+}
+.switchInner:after {
+  content: "";
+  padding-right: 0.875em;
+  background-color: $grey_3;
+  text-align: right;
+}
+.switchSwitch {
+  display: block;
+  width: 1.125em;
+  margin: 0.125em;
+  background: #FFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 1.325em;
+  border: none; 
+  border-radius: 2.500em;
+  transition: all 0.3s ease-in 0s; 
+}
+.switchTick{
+  fill: $white;
+  height: 1em;
+  width: 1em;
+  position: absolute;
+  left: -0.875em;
+  top: 0.188em;
+  transition: all 0.3s ease-in 0s; 
+}
+.switchLabel{
+  &.switchOn{
+    .switchInner {
+      margin-left: 0;
+    }
+    .switchSwitch {
+      right: 0; 
+    }
+    .switchTick{
+      left: 0.375em;
+    }
+  }
+}
+
+.disabled{
+  cursor: not-allowed;
+  .switchLabel{
+    &.switchOff{
+      .switchInner:after {
+        background: $grey_6;
+      }
+      .switchSwitch {
+        background: $grey_4;
+      }
+    }
+  }
+}

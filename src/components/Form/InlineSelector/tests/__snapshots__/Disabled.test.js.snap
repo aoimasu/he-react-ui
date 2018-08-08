@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<InlineSelector /> rendered correctly with Default fixture 1`] = `
+exports[`<InlineSelector /> rendered correctly with Value fixture 1`] = `
 <InlineSelector
-  disabled={false}
+  disabled={true}
   id="demo"
   name="demo"
   onChange={[Function]}
@@ -26,11 +26,11 @@ exports[`<InlineSelector /> rendered correctly with Default fixture 1`] = `
       },
     ]
   }
-  value={null}
+  value="2"
   vertical={false}
 >
   <div
-    className="outer"
+    className="outer disabled"
     id="demo"
     name="demo"
   >
@@ -45,7 +45,7 @@ exports[`<InlineSelector /> rendered correctly with Default fixture 1`] = `
         Any
       </div>
       <div
-        className="option"
+        className="option selected"
         key="AM"
         onClick={[Function]}
       >

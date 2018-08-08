@@ -2,6 +2,7 @@
 
 exports[`<InlineSelector /> rendered correctly with label fixture 1`] = `
 <InlineSelector
+  disabled={false}
   id="demo"
   label="What time of day?"
   name="demo"

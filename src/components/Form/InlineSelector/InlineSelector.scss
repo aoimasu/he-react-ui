@@ -16,7 +16,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     border: 1px solid $grey_5;
     white-space: nowrap;
     padding: 10px 10px;
@@ -26,28 +25,21 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: $grey_1;
+    color: $grey_4;
     background-color: $white;
     margin-left: -1px;
     min-width: 44px;
+    cursor: not-allowed;
     &:first-child{
         border-radius: 4px 0 0 4px;
     }
     &:last-child{
         border-radius: 0 4px 4px 0;
     }
-    &:not(.disabled):hover{
-        border: 1px solid $teal;
-        z-index: 1;
-    }
-    &:not(.disabled).selected{
+
+    &.selected{
         background-color: $teal;
         border: 1px solid $teal;
-        color: $white;
-        &:hover{
-            background-color: $teal_dark_20;
-            border: 1px solid $teal_dark_20;
-        }
     }
 }
 
@@ -65,5 +57,29 @@
                 border-radius: 0 0 4px 4px;
             }
         }
+    }
+}
+
+.outer {
+    &:not(.disabled){
+        .option{
+            cursor: pointer;
+            color: $grey_1;
+            &:hover{
+                border: 1px solid $teal;
+                z-index: 1;
+            }
+            &.selected{
+                color: $white;
+                &:hover{
+                    background-color: $teal_dark_20;
+                    border: 1px solid $teal_dark_20;
+                }
+            }
+        }
+    }
+
+    &.disabled {
+        cursor: not-allowed;
     }
 }
