@@ -74,8 +74,8 @@
 }
 
 .disabled{
-  cursor: not-allowed;
   .switchLabel{
+    cursor: not-allowed;
     &.switchOff{
       .switchInner:after {
         background: $grey_6;
@@ -83,6 +83,9 @@
       .switchSwitch {
         background: $grey_4;
       }
+    }
+    &.switchOn{
+      opacity: 0.4;
     }
   }
 }
