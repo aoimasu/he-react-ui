@@ -1,5 +1,5 @@
 // @flow
-import fixture from '../fixtures/HealthEngine.fixture.js';
+import HealthEngine from '../fixtures/HealthEngine.fixture.js';
 import testFixture from '../../../../config/testFixture';
 
-testFixture(fixture, 'HealthEngine');
+testFixture(HealthEngine, 'HealthEngine');

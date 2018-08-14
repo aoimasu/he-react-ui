@@ -8,6 +8,7 @@ import 'raf/polyfill';
 global.shallow = shallow;
 global.render = render;
 global.mount = mount;
+global.requestAnimationFrame = handler => setTimeout(handler, 10);
 
 // React 16 Enzyme adapter
 Enzyme.configure({ adapter: new Adapter() });
@@ -39,17 +40,14 @@ window.matchMedia =
 
 // Cause console errors to fail tests
 
-let throwing = false;
+let accumulatedErrors = [];
 
 global.console.error = it => {
-  if (throwing) {
-    console.log(it); // eslint-disable-line
-  } else {
-    throwing = true;
-    process.nextTick(() => {
-      throwing = false;
-    });
-
-    expect(it).toBe('No react warnings');
-  }
+  accumulatedErrors.push(it);
 };
+
+afterEach(() => {
+  const consoleErrors = accumulatedErrors.join('\n');
+  accumulatedErrors = [];
+  expect(consoleErrors).toBe('');
+});

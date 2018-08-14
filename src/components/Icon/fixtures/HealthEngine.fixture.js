@@ -1,9 +1,17 @@
 // @flow
-import Icon from '../';
+import HealthEngine from '../HealthEngine';
 
-export default {
-  component: Icon,
-  props: {
+export default [
+  {
     name: 'HealthEngine',
+    component: HealthEngine,
+    props: {},
   },
-};
+  {
+    name: 'HealthEngine-inverted',
+    component: HealthEngine,
+    props: {
+      inverted: true,
+    },
+  },
+];

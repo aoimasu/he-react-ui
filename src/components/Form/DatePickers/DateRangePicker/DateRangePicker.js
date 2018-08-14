@@ -5,7 +5,9 @@ import React from 'react';
 import { DateRangePicker as InnerDateRangePicker } from 'react-dates';
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
-import { Icon, SingleSelect } from '../../../';
+import { SingleSelect } from '../../../';
+import ChevronRight from '../../../Icon/Chevrons/ChevronRight';
+import ChevronLeft from '../../../Icon/Chevrons/ChevronLeft';
 import style from './DateRangePicker.module.scss';
 
 const CUSTOM = 'CUSTOM';
@@ -54,6 +56,7 @@ type Props = {
   fill: boolean,
 
   onChange: Function,
+  isOutsideRange: Function,
   placeholder: string,
   keepOpenOnDateSelect: boolean,
 };
@@ -69,6 +72,7 @@ export default class DateRangePicker extends React.Component<Props, *> {
     fill: false,
     keepOpenOnDateSelect: false,
     onChange: () => {},
+    isOutsideRange: NEVER,
     value: null,
   };
 
@@ -159,6 +163,7 @@ export default class DateRangePicker extends React.Component<Props, *> {
       id,
       fill,
       keepOpenOnDateSelect,
+      isOutsideRange,
     } = this.props;
 
     const [startDate, endDate] = value || [null, null];
@@ -202,11 +207,11 @@ export default class DateRangePicker extends React.Component<Props, *> {
             disabled={disabled}
             onDatesChange={this.handleDatesChange}
             onFocusChange={this.handleFocusChange}
-            navNext={<Icon name="ChevronRight" />}
-            navPrev={<Icon name="ChevronLeft" />}
+            navNext={<ChevronRight />}
+            navPrev={<ChevronLeft />}
             focusedInput={focusedInput}
             isDayBlocked={NEVER}
-            isOutsideRange={NEVER}
+            isOutsideRange={isOutsideRange}
             keepOpenOnDateSelect={keepOpenOnDateSelect}
           />
         </div>

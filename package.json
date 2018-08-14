@@ -1,6 +1,6 @@
 {
   "name": "he-react-ui",
-  "version": "0.1.68",
+  "version": "0.1.71",
   "description": "Common UI elements for HealthEngine",
   "main": "dist/index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "lint-fix": "eslint . --fix --env jest",
     "cosmos": "cosmos",
     "precommit": "yarn verify",
-    "verify": "yarn && yarn lint && yarn flow && yarn coverage && yarn jest-coverage-ratchet"
+    "ratchet-coverage": "node config/ratchetCoverage.js",
+    "verify": "yarn && yarn lint && yarn flow && yarn coverage && yarn ratchet-coverage"
   },
   "keywords": [
     "HealthEngine",
@@ -40,11 +41,10 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "event-source-polyfill": "^0.0.12",
-    "flow-bin": "^0.75.0",
+    "flow-bin": "^0.78.0",
     "is-absolute-url": "^2.1.0",
     "is-url-external": "^1.0.3",
     "jest": "^22.4.3",
-    "jest-coverage-ratchet": "^0.2.3",
     "moment": "^2.22.1",
     "nwsapi": "^2.0.4",
     "object-assign": "^4.1.1",
@@ -105,25 +105,17 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
-      "!src/**/*.fixture.js"
+      "!src/**/*.fixture.js",
+      "!src/**/*.fixtureData.js",
+      "!src/index.js"
     ],
-    "coverageThreshold": {
-      "global": {
-        "lines": 87.86,
-        "statements": 87.58,
-        "functions": 79.22,
-        "branches": 83.02
-      }
-    },
     "coverageReporters": [
       "json",
       "lcov",
       "text",
       "json-summary"
     ],
-    "setupFiles": [
-      "<rootDir>/config/jest.config.js"
-    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/config/jest.config.js",
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.js?(x)",
       "<rootDir>/src/**/?(*.)(test).js?(x)"
