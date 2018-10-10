@@ -26,6 +26,7 @@ type Props = {
   disabled?: boolean,
   marker?: boolean,
   helper?: any,
+  verified?: any,
   isValid?: boolean,
   password?: boolean,
   small?: boolean,
@@ -40,6 +41,7 @@ class TextField extends React.Component<Props, *> {
     inline: false,
     marker: false,
     helper: null,
+    verified: null,
     value: '',
     isValid: true,
     onBlur: returnNull,
@@ -96,6 +98,7 @@ class TextField extends React.Component<Props, *> {
       inline,
       marker,
       helper,
+      verified,
       onBlur,
       onChange,
       onFocus,
@@ -114,6 +117,7 @@ class TextField extends React.Component<Props, *> {
         [style.inline]: inline,
         [style.focused]: focused,
         [style.hasMarker]: marker || helper,
+        [style.hasVerified]: verified,
         [style.small]: small,
       },
       className,
@@ -147,6 +151,7 @@ class TextField extends React.Component<Props, *> {
           {marker &&
             value !== '' &&
             !helper &&
+            !verified &&
             (isValid ? (
               <Tick className={style.marker} />
             ) : (
@@ -168,11 +173,12 @@ class TextField extends React.Component<Props, *> {
 
         {helper && (
           <div className={style.helper}>
-            <Popover content={helper} light>
+            <Popover content={helper} tooltip light preferRight>
               <Help className={style.helperIcon} />
             </Popover>
           </div>
         )}
+        {verified && <div className={style.verified}>{verified}</div>}
       </div>
     );
   }

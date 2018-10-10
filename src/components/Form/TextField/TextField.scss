@@ -91,6 +91,12 @@
     }
 }
 
+.hasVerified {
+    .input {
+        margin-right: 80px;
+    }
+}
+
 .disabled {
     .label {
         color: $grey_3;
@@ -150,6 +156,11 @@
     right: 16px;
     top: 16px;
     z-index: 2;
+}
+.verified{
+    position: absolute;
+    right: 16px;
+    top: 16px;
 }
 .helperIcon {
     color: $grey_3;

@@ -127,4 +127,15 @@ export default [
       helper: <div>Test HTML</div>,
     },
   },
+
+  {
+    name: 'With verified',
+    component: Input,
+    props: {
+      id: 'demo',
+      name: 'demo',
+      label: 'First Name',
+      verified: <div>Verify</div>,
+    },
+  },
 ];
