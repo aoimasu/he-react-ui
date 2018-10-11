@@ -91,12 +91,6 @@
     }
 }
 
-.hasVerified {
-    .input {
-        margin-right: 80px;
-    }
-}
-
 .disabled {
     .label {
         color: $grey_3;
@@ -157,11 +151,6 @@
     top: 16px;
     z-index: 2;
 }
-.verified{
-    position: absolute;
-    right: 16px;
-    top: 16px;
-}
 .helperIcon {
     color: $grey_3;
     fill: currentColor;
@@ -174,4 +163,33 @@
     font-size: 14px;
     padding-top: 8px;
     user-select: none;
+}
+
+.verifiedTag {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 5.813em;
+    height: 1.875em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid $teal;
+    cursor: pointer;
+}
+.verified {
+    background-color: $green;
+    border-color: $green;
+    color: $white;
+    &:hover{
+        background: darken($green, 5);
+    }
+}
+.unVerified {
+    background-color: $white;
+    color: $teal;
+    &:hover{
+        background: darken($white, 5);
+    }
 }

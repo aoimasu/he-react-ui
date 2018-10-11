@@ -6,13 +6,16 @@
  */
 
 import classnames from 'classnames';
-import React from 'react';
+import React, { Fragment } from 'react';
 import { returnNull } from '../../../util';
+import PopUp from '../../PopUp';
 import Cross from '../../Icon/Cross';
 import Tick from '../../Icon/Tick';
 import Help from '../../Icon/Help';
 import Popover from '../../Popover';
 import style from './TextField.scss';
+
+type Markers = 'none' | 'tick-cross' | 'info' | 'verify';
 
 type Props = {
   id: string,
@@ -24,29 +27,33 @@ type Props = {
   inline?: boolean,
   value?: string,
   disabled?: boolean,
-  marker?: boolean,
-  helper?: any,
-  verified?: any,
+  marker?: Markers,
+  markerTooltip?: any,
+  showMarkerTooltip?: boolean,
   isValid?: boolean,
+  isVerified?: boolean,
   password?: boolean,
   small?: boolean,
   onBlur: Function,
   onChange: Function,
   onFocus: Function,
+  toggleMarkerTooltip?: Function,
 };
 
 class TextField extends React.Component<Props, *> {
   static defaultProps = {
     disabled: false,
     inline: false,
-    marker: false,
-    helper: null,
-    verified: null,
+    marker: 'none',
+    markerTooltip: null,
+    showMarkerTooltip: false,
     value: '',
     isValid: true,
+    isVerified: true,
     onBlur: returnNull,
     onChange: returnNull,
     onFocus: returnNull,
+    toggleMarkerTooltip: returnNull,
   };
 
   state = {
@@ -85,6 +92,62 @@ class TextField extends React.Component<Props, *> {
     this.props.onChange(event);
   };
 
+  renderMarker = () => {
+    const {
+      value,
+      marker,
+      markerTooltip,
+      isVerified,
+      isValid,
+      showMarkerTooltip,
+      toggleMarkerTooltip,
+    } = this.props;
+    switch (marker) {
+      case 'tick-cross':
+        return (
+          value !== '' &&
+          (isValid ? (
+            <Tick className={style.marker} />
+          ) : (
+            <Cross className={style.marker} />
+          ))
+        );
+      case 'info':
+        return (
+          markerTooltip && (
+            <div className={style.helper}>
+              <Popover content={markerTooltip} tooltip light preferRight>
+                <Help className={style.helperIcon} />
+              </Popover>
+            </div>
+          )
+        );
+      case 'verify': {
+        return (
+          <Fragment>
+            <PopUp
+              showing={showMarkerTooltip}
+              className={style.popUp}
+              onClose={toggleMarkerTooltip}
+            >
+              {markerTooltip}
+            </PopUp>
+            <div
+              className={classnames(
+                style.verifiedTag,
+                isVerified ? style.verified : style.unVerified,
+              )}
+              onClick={toggleMarkerTooltip}
+            >
+              {isVerified ? 'Verified' : 'Verify'}
+            </div>
+          </Fragment>
+        );
+      }
+      default:
+        return null;
+    }
+  };
   render() {
     const {
       className,
@@ -97,14 +160,16 @@ class TextField extends React.Component<Props, *> {
       error,
       inline,
       marker,
-      helper,
-      verified,
+      markerTooltip,
       onBlur,
       onChange,
       onFocus,
       isValid,
+      isVerified,
       password,
       small,
+      showMarkerTooltip,
+      toggleMarkerTooltip,
       ...restProps
     } = this.props;
     const { focused } = this.state;
@@ -116,8 +181,7 @@ class TextField extends React.Component<Props, *> {
         [style.disabled]: disabled,
         [style.inline]: inline,
         [style.focused]: focused,
-        [style.hasMarker]: marker || helper,
-        [style.hasVerified]: verified,
+        [style.hasMarker]: marker !== 'none',
         [style.small]: small,
       },
       className,
@@ -148,15 +212,7 @@ class TextField extends React.Component<Props, *> {
             type={password ? 'password' : 'text'}
           />
 
-          {marker &&
-            value !== '' &&
-            !helper &&
-            !verified &&
-            (isValid ? (
-              <Tick className={style.marker} />
-            ) : (
-              <Cross className={style.marker} />
-            ))}
+          {this.renderMarker()}
 
           {label && (
             <label className={labelClasses} htmlFor={id}>
@@ -170,15 +226,6 @@ class TextField extends React.Component<Props, *> {
             {error || description}
           </label>
         )}
-
-        {helper && (
-          <div className={style.helper}>
-            <Popover content={helper} tooltip light preferRight>
-              <Help className={style.helperIcon} />
-            </Popover>
-          </div>
-        )}
-        {verified && <div className={style.verified}>{verified}</div>}
       </div>
     );
   }

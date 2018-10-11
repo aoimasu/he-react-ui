@@ -3,25 +3,44 @@
 exports[`<TextField /> rendered correctly with Default fixture 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
-  label="First Name"
-  marker={false}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
   name="demo"
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
 >
   <div
-    className="outer hasVerified"
+    className="outer hasMarker"
   >
     <div
       className="block"
@@ -37,19 +56,107 @@ exports[`<TextField /> rendered correctly with Default fixture 1`] = `
         type="text"
         value=""
       />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
+        Verify
+      </div>
       <label
         className="label"
         htmlFor="demo"
       >
-        First Name
+        Mobile
       </label>
-    </div>
-    <div
-      className="verified"
-    >
-      <div>
-        Verify
-      </div>
     </div>
   </div>
 </TextField>
@@ -58,25 +165,44 @@ exports[`<TextField /> rendered correctly with Default fixture 1`] = `
 exports[`<TextField /> rendered correctly with Disabled fixture 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
-  label="First Name"
-  marker={false}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
   name="demo"
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
 >
   <div
-    className="outer hasVerified"
+    className="outer hasMarker"
   >
     <div
       className="block"
@@ -92,19 +218,107 @@ exports[`<TextField /> rendered correctly with Disabled fixture 1`] = `
         type="text"
         value=""
       />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
+        Verify
+      </div>
       <label
         className="label"
         htmlFor="demo"
       >
-        First Name
+        Mobile
       </label>
-    </div>
-    <div
-      className="verified"
-    >
-      <div>
-        Verify
-      </div>
     </div>
   </div>
 </TextField>
@@ -113,25 +327,44 @@ exports[`<TextField /> rendered correctly with Disabled fixture 1`] = `
 exports[`<TextField /> rendered correctly with Error fixture 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
-  label="First Name"
-  marker={false}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
   name="demo"
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
 >
   <div
-    className="outer hasVerified"
+    className="outer hasMarker"
   >
     <div
       className="block"
@@ -147,19 +380,269 @@ exports[`<TextField /> rendered correctly with Error fixture 1`] = `
         type="text"
         value=""
       />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
+        Verify
+      </div>
       <label
         className="label"
         htmlFor="demo"
       >
-        First Name
+        Mobile
       </label>
     </div>
+  </div>
+</TextField>
+`;
+
+exports[`<TextField /> rendered correctly with Info tooltip fixture 1`] = `
+<TextField
+  disabled={false}
+  id="demo"
+  inline={false}
+  isValid={true}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
+  name="demo"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
+  value=""
+>
+  <div
+    className="outer hasMarker"
+  >
     <div
-      className="verified"
+      className="block"
     >
-      <div>
+      <input
+        className="input"
+        disabled={false}
+        id="demo"
+        name="demo"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
         Verify
       </div>
+      <label
+        className="label"
+        htmlFor="demo"
+      >
+        Mobile
+      </label>
     </div>
   </div>
 </TextField>
@@ -168,25 +651,44 @@ exports[`<TextField /> rendered correctly with Error fixture 1`] = `
 exports[`<TextField /> rendered correctly with InvalidMarker fixture 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
-  label="First Name"
-  marker={false}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
   name="demo"
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
 >
   <div
-    className="outer hasVerified"
+    className="outer hasMarker"
   >
     <div
       className="block"
@@ -202,19 +704,269 @@ exports[`<TextField /> rendered correctly with InvalidMarker fixture 1`] = `
         type="text"
         value=""
       />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
+        Verify
+      </div>
       <label
         className="label"
         htmlFor="demo"
       >
-        First Name
+        Mobile
       </label>
     </div>
+  </div>
+</TextField>
+`;
+
+exports[`<TextField /> rendered correctly with UnVerified status fixture 1`] = `
+<TextField
+  disabled={false}
+  id="demo"
+  inline={false}
+  isValid={true}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
+  name="demo"
+  onBlur={[Function]}
+  onChange={[Function]}
+  onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
+  value=""
+>
+  <div
+    className="outer hasMarker"
+  >
     <div
-      className="verified"
+      className="block"
     >
-      <div>
+      <input
+        className="input"
+        disabled={false}
+        id="demo"
+        name="demo"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="text"
+        value=""
+      />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
         Verify
       </div>
+      <label
+        className="label"
+        htmlFor="demo"
+      >
+        Mobile
+      </label>
     </div>
   </div>
 </TextField>
@@ -223,25 +975,44 @@ exports[`<TextField /> rendered correctly with InvalidMarker fixture 1`] = `
 exports[`<TextField /> rendered correctly with ValidMarker fixture 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
-  label="First Name"
-  marker={false}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
   name="demo"
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
 >
   <div
-    className="outer hasVerified"
+    className="outer hasMarker"
   >
     <div
       className="block"
@@ -257,19 +1028,107 @@ exports[`<TextField /> rendered correctly with ValidMarker fixture 1`] = `
         type="text"
         value=""
       />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
+        Verify
+      </div>
       <label
         className="label"
         htmlFor="demo"
       >
-        First Name
+        Mobile
       </label>
-    </div>
-    <div
-      className="verified"
-    >
-      <div>
-        Verify
-      </div>
     </div>
   </div>
 </TextField>
@@ -278,25 +1137,44 @@ exports[`<TextField /> rendered correctly with ValidMarker fixture 1`] = `
 exports[`<TextField /> rendered correctly with Value fixture 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
-  label="First Name"
-  marker={false}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
   name="demo"
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
 >
   <div
-    className="outer hasVerified"
+    className="outer hasMarker"
   >
     <div
       className="block"
@@ -312,46 +1190,153 @@ exports[`<TextField /> rendered correctly with Value fixture 1`] = `
         type="text"
         value=""
       />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
+        Verify
+      </div>
       <label
         className="label"
         htmlFor="demo"
       >
-        First Name
+        Mobile
       </label>
-    </div>
-    <div
-      className="verified"
-    >
-      <div>
-        Verify
-      </div>
     </div>
   </div>
 </TextField>
 `;
 
-exports[`<TextField /> rendered correctly with With helper fixture 1`] = `
+exports[`<TextField /> rendered correctly with Verified status fixture 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
-  label="First Name"
-  marker={false}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
   name="demo"
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
 >
   <div
-    className="outer hasVerified"
+    className="outer hasMarker"
   >
     <div
       className="block"
@@ -367,74 +1352,107 @@ exports[`<TextField /> rendered correctly with With helper fixture 1`] = `
         type="text"
         value=""
       />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
+        Verify
+      </div>
       <label
         className="label"
         htmlFor="demo"
       >
-        First Name
+        Mobile
       </label>
-    </div>
-    <div
-      className="verified"
-    >
-      <div>
-        Verify
-      </div>
-    </div>
-  </div>
-</TextField>
-`;
-
-exports[`<TextField /> rendered correctly with With verified fixture 1`] = `
-<TextField
-  disabled={false}
-  helper={null}
-  id="demo"
-  inline={false}
-  isValid={true}
-  label="First Name"
-  marker={false}
-  name="demo"
-  onBlur={[Function]}
-  onChange={[Function]}
-  onFocus={[Function]}
-  value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
->
-  <div
-    className="outer hasVerified"
-  >
-    <div
-      className="block"
-    >
-      <input
-        className="input"
-        disabled={false}
-        id="demo"
-        name="demo"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="text"
-        value=""
-      />
-      <label
-        className="label"
-        htmlFor="demo"
-      >
-        First Name
-      </label>
-    </div>
-    <div
-      className="verified"
-    >
-      <div>
-        Verify
-      </div>
     </div>
   </div>
 </TextField>
@@ -443,25 +1461,44 @@ exports[`<TextField /> rendered correctly with With verified fixture 1`] = `
 exports[`<TextField /> rendered correctly with noLabel fixture 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
-  label="First Name"
-  marker={false}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
   name="demo"
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
 >
   <div
-    className="outer hasVerified"
+    className="outer hasMarker"
   >
     <div
       className="block"
@@ -477,19 +1514,107 @@ exports[`<TextField /> rendered correctly with noLabel fixture 1`] = `
         type="text"
         value=""
       />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
+        Verify
+      </div>
       <label
         className="label"
         htmlFor="demo"
       >
-        First Name
+        Mobile
       </label>
-    </div>
-    <div
-      className="verified"
-    >
-      <div>
-        Verify
-      </div>
     </div>
   </div>
 </TextField>
@@ -498,25 +1623,44 @@ exports[`<TextField /> rendered correctly with noLabel fixture 1`] = `
 exports[`<TextField /> rendered correctly with password fixture 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
-  label="First Name"
-  marker={false}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
   name="demo"
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
 >
   <div
-    className="outer hasVerified"
+    className="outer hasMarker"
   >
     <div
       className="block"
@@ -532,19 +1676,107 @@ exports[`<TextField /> rendered correctly with password fixture 1`] = `
         type="text"
         value=""
       />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
+        Verify
+      </div>
       <label
         className="label"
         htmlFor="demo"
       >
-        First Name
+        Mobile
       </label>
-    </div>
-    <div
-      className="verified"
-    >
-      <div>
-        Verify
-      </div>
     </div>
   </div>
 </TextField>
@@ -553,25 +1785,44 @@ exports[`<TextField /> rendered correctly with password fixture 1`] = `
 exports[`<TextField /> rendered correctly with small fixture 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
-  label="First Name"
-  marker={false}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
   name="demo"
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
 >
   <div
-    className="outer hasVerified"
+    className="outer hasMarker"
   >
     <div
       className="block"
@@ -587,19 +1838,107 @@ exports[`<TextField /> rendered correctly with small fixture 1`] = `
         type="text"
         value=""
       />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
+        Verify
+      </div>
       <label
         className="label"
         htmlFor="demo"
       >
-        First Name
+        Mobile
       </label>
-    </div>
-    <div
-      className="verified"
-    >
-      <div>
-        Verify
-      </div>
     </div>
   </div>
 </TextField>
@@ -608,25 +1947,44 @@ exports[`<TextField /> rendered correctly with small fixture 1`] = `
 exports[`<TextField /> rendered correctly with smallNoLabel fixture 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
-  label="First Name"
-  marker={false}
+  isVerified={false}
+  label="Mobile"
+  marker="verify"
+  markerTooltip={
+    <UNDEFINED>
+      <Icon
+        className="editIcon"
+        name="Edit"
+      />
+      <Heading
+        h1={false}
+        h2={false}
+        h3={true}
+        h4={false}
+        nav={false}
+      >
+        Sample Popup
+      </Heading>
+      <Paragraph
+        className="paragraph"
+      >
+        Sample content
+      </Paragraph>
+    </UNDEFINED>
+  }
   name="demo"
   onBlur={[Function]}
   onChange={[Function]}
   onFocus={[Function]}
+  showMarkerTooltip={true}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={
-    <div>
-      Verify
-    </div>
-  }
 >
   <div
-    className="outer hasVerified"
+    className="outer hasMarker"
   >
     <div
       className="block"
@@ -642,19 +2000,107 @@ exports[`<TextField /> rendered correctly with smallNoLabel fixture 1`] = `
         type="text"
         value=""
       />
+      <PopUp
+        className="popUp"
+        modal={false}
+        noPadding={false}
+        onClose={[Function]}
+        onOpen={[Function]}
+        showing={true}
+      >
+        <div
+          className="outer showing"
+        >
+          <div
+            className="overlay"
+            onClick={[Function]}
+          />
+          <div
+            className="popup popUp popupWithPadding"
+          >
+            <Cross
+              className="close"
+              fill="currentColor"
+              height={32}
+              onClick={[Function]}
+              width={32}
+            >
+              <svg
+                className="close"
+                fill="currentColor"
+                height={32}
+                onClick={[Function]}
+                viewBox="0 0 24 24"
+                width={32}
+              >
+                <path
+                  d="M12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414L13.414 12l3.293 3.293a1 1 0 1 1-1.414 1.414L12 13.414l-3.293 3.293a1 1 0 1 1-1.414-1.414L10.586 12 7.293 8.707a1 1 0 1 1 1.414-1.414L12 10.586z"
+                />
+              </svg>
+            </Cross>
+            <Icon
+              className="editIcon"
+              key="icon"
+              name="Edit"
+            >
+              <Edit
+                className="icon editIcon"
+                fill="currentColor"
+                height={32}
+                width={32}
+              >
+                <svg
+                  className="icon editIcon"
+                  fill="currentColor"
+                  height={32}
+                  viewBox="0 0 24 24"
+                  width={32}
+                >
+                  <path
+                    d="M17.5 10.086L19.086 8.5 15.5 4.914 13.914 6.5l3.586 3.586zM16.086 11.5L12.5 7.914l-8 8V19.5h3.586l8-8zM8.5 21.5h-5a1 1 0 0 1-1-1v-5a1 1 0 0 1 .293-.707l12-12a1 1 0 0 1 1.414 0l5 5a1 1 0 0 1 0 1.414l-12 12a1 1 0 0 1-.707.293z"
+                  />
+                </svg>
+              </Edit>
+            </Icon>
+            <Heading
+              h1={false}
+              h2={false}
+              h3={true}
+              h4={false}
+              key="h3"
+              nav={false}
+            >
+              <h3
+                className="heading h3"
+              >
+                Sample Popup
+              </h3>
+            </Heading>
+            <Paragraph
+              className="paragraph"
+              key="paragraph"
+            >
+              <p
+                className="paragraph paragraph"
+              >
+                Sample content
+              </p>
+            </Paragraph>
+          </div>
+        </div>
+      </PopUp>
+      <div
+        className="verifiedTag unVerified"
+        onClick={[Function]}
+      >
+        Verify
+      </div>
       <label
         className="label"
         htmlFor="demo"
       >
-        First Name
+        Mobile
       </label>
-    </div>
-    <div
-      className="verified"
-    >
-      <div>
-        Verify
-      </div>
     </div>
   </div>
 </TextField>
@@ -663,12 +2109,13 @@ exports[`<TextField /> rendered correctly with smallNoLabel fixture 1`] = `
 exports[`TextField test interaction 1`] = `
 <TextField
   disabled={false}
-  helper={null}
   id="demo"
   inline={false}
   isValid={true}
+  isVerified={true}
   label="Label"
-  marker={false}
+  marker="none"
+  markerTooltip={null}
   name="demo"
   onBlur={[Function]}
   onChange={
@@ -678,20 +2125,22 @@ exports[`TextField test interaction 1`] = `
           Object {
             "props": Object {
               "disabled": false,
-              "helper": null,
               "id": "demo",
               "inline": false,
               "isValid": true,
+              "isVerified": true,
               "label": "Label",
-              "marker": false,
+              "marker": "none",
+              "markerTooltip": null,
               "name": "demo",
               "onBlur": [Function],
               "onChange": [MockFunction] {
                 "calls": [Circular],
               },
               "onFocus": [Function],
+              "showMarkerTooltip": false,
+              "toggleMarkerTooltip": [Function],
               "value": "",
-              "verified": null,
             },
             "value": "",
           },
@@ -700,8 +2149,9 @@ exports[`TextField test interaction 1`] = `
     }
   }
   onFocus={[Function]}
+  showMarkerTooltip={false}
+  toggleMarkerTooltip={[Function]}
   value=""
-  verified={null}
 >
   <div
     className="outer"
