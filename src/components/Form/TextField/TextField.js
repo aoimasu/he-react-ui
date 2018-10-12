@@ -49,7 +49,7 @@ class TextField extends React.Component<Props, *> {
     showMarkerTooltip: false,
     value: '',
     isValid: true,
-    isVerified: true,
+    isVerified: false,
     onBlur: returnNull,
     onChange: returnNull,
     onFocus: returnNull,
