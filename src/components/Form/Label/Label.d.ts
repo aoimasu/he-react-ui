@@ -1,0 +1,6 @@
+/**
+ *
+ * Label
+ *
+ */
+export default Label;

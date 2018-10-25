@@ -7,8 +7,6 @@ node_modules/
 /coverage
 
 # production
-/build
-/dist
 /cosmos-export
 
 # misc

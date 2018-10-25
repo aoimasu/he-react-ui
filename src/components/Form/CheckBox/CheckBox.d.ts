@@ -1,0 +1,6 @@
+/**
+ *
+ * CheckBox
+ *
+ */
+export default CheckBox;

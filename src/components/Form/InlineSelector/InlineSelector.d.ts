@@ -1,0 +1,6 @@
+/**
+ *
+ * InlineSelector
+ *
+ */
+export default InlineSelector;
