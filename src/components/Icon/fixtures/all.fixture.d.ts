@@ -1,16 +1,39 @@
 /// <reference types="react" />
-import HealthEngine from '../HealthEngine';
 declare const _default: ({
     name: string;
-    component: import("react").StatelessComponent<{}>;
-    props: {};
+    component: (props: any) => JSX.Element;
+    props: {
+        name: string;
+        dark?: undefined;
+        down?: undefined;
+        shadow?: undefined;
+    };
 } | {
     name: string;
-    component: import("react").StatelessComponent<import("react").SVGProps<SVGSVGElement>>;
-    props: {};
+    component: (props: any) => JSX.Element;
+    props: {
+        name: string;
+        dark: boolean;
+        down?: undefined;
+        shadow?: undefined;
+    };
 } | {
     name: string;
-    component: typeof HealthEngine;
-    props: {};
+    component: (props: any) => JSX.Element;
+    props: {
+        name: string;
+        down: boolean;
+        dark?: undefined;
+        shadow?: undefined;
+    };
+} | {
+    name: string;
+    component: (props: any) => JSX.Element;
+    props: {
+        name: string;
+        shadow: boolean;
+        dark?: undefined;
+        down?: undefined;
+    };
 })[];
 export default _default;

@@ -4,6 +4,7 @@ declare const _default: {
         width?: number | undefined;
         height?: number | undefined;
         color?: "teal" | "blue" | "green" | "red" | "white" | undefined;
+        shadow?: boolean | undefined;
         className?: string | undefined;
         name: string;
         style?: {} | undefined;
