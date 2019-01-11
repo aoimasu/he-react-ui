@@ -99,6 +99,17 @@ exports[`<Icon /> rendered correctly with ArrowUp fixture 1`] = `
 </Icon>
 `;
 
+exports[`<Icon /> rendered correctly with BackInTime fixture 1`] = `
+<Icon
+  name="BackInTime"
+>
+  <Icon
+    name="BackInTime"
+    shadow={false}
+  />
+</Icon>
+`;
+
 exports[`<Icon /> rendered correctly with Bookings fixture 1`] = `
 <Icon
   name="Bookings"
@@ -253,6 +264,17 @@ exports[`<Icon /> rendered correctly with DeleteProfile fixture 1`] = `
 </Icon>
 `;
 
+exports[`<Icon /> rendered correctly with Download fixture 1`] = `
+<Icon
+  name="Download"
+>
+  <Icon
+    name="Download"
+    shadow={false}
+  />
+</Icon>
+`;
+
 exports[`<Icon /> rendered correctly with DropDown fixture 1`] = `
 <Icon
   name="DropDown"
@@ -341,12 +363,34 @@ exports[`<Icon /> rendered correctly with Home fixture 1`] = `
 </Icon>
 `;
 
+exports[`<Icon /> rendered correctly with Info fixture 1`] = `
+<Icon
+  name="Info"
+>
+  <Icon
+    name="Info"
+    shadow={false}
+  />
+</Icon>
+`;
+
 exports[`<Icon /> rendered correctly with Language fixture 1`] = `
 <Icon
   name="Language"
 >
   <Icon
     name="Language"
+    shadow={false}
+  />
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with List fixture 1`] = `
+<Icon
+  name="List"
+>
+  <Icon
+    name="List"
     shadow={false}
   />
 </Icon>

@@ -126,6 +126,20 @@ exports[`<Icon /> rendered correctly with ArrowUp fixture 1`] = `
 </Icon>
 `;
 
+exports[`<Icon /> rendered correctly with BackInTime fixture 1`] = `
+<Icon
+  name="BackInTime"
+  shadow={false}
+>
+  <BackInTime
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  />
+</Icon>
+`;
+
 exports[`<Icon /> rendered correctly with Bookings fixture 1`] = `
 <Icon
   name="Bookings"
@@ -320,6 +334,20 @@ exports[`<Icon /> rendered correctly with DeleteProfile fixture 1`] = `
 </Icon>
 `;
 
+exports[`<Icon /> rendered correctly with Download fixture 1`] = `
+<Icon
+  name="Download"
+  shadow={false}
+>
+  <Download
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  />
+</Icon>
+`;
+
 exports[`<Icon /> rendered correctly with DropDown fixture 1`] = `
 <Icon
   name="DropDown"
@@ -422,12 +450,40 @@ exports[`<Icon /> rendered correctly with Home fixture 1`] = `
 </Icon>
 `;
 
+exports[`<Icon /> rendered correctly with Info fixture 1`] = `
+<Icon
+  name="Info"
+  shadow={false}
+>
+  <Info
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  />
+</Icon>
+`;
+
 exports[`<Icon /> rendered correctly with Language fixture 1`] = `
 <Icon
   name="Language"
   shadow={false}
 >
   <Language
+    className="icon"
+    fill="currentColor"
+    height={32}
+    width={32}
+  />
+</Icon>
+`;
+
+exports[`<Icon /> rendered correctly with List fixture 1`] = `
+<Icon
+  name="List"
+  shadow={false}
+>
+  <List
     className="icon"
     fill="currentColor"
     height={32}

@@ -10,6 +10,7 @@ import {
   ArrowDown,
   CurvedArrow,
 } from './Arrows';
+import BackInTime from './BackInTime';
 import Bookings from './Bookings';
 import Calendar from './Calendar';
 import CaretRight from './CaretRight';
@@ -24,6 +25,7 @@ import Clock from './Clock';
 import Cross from './Cross';
 import Delete from './Delete';
 import DeleteProfile from './DeleteProfile';
+import Download from './Download';
 import DropDown from './DropDown';
 import Edit from './Edit';
 import Ellipsis from './Ellipsis';
@@ -32,8 +34,10 @@ import HealthEngine from './HealthEngine';
 import HealthEngineWithText from './HealthEngineWithText';
 import Help from './Help';
 import Home from './Home';
+import Info from './Info';
 import style from './Icon.scss';
 import Language from './Language';
+import List from './List';
 import Lock from './Lock';
 import Logout from './Logout';
 import Megaphone from './Megaphone';
@@ -90,6 +94,8 @@ const Icon: React.SFC<{
       return <ArrowUp {...childProps} />;
     case 'ArrowDown':
       return <ArrowDown {...childProps} />;
+    case 'BackInTime':
+      return <BackInTime {...childProps} />;
     case 'Bookings':
       return <Bookings {...childProps} />;
     case 'Calendar':
@@ -118,6 +124,8 @@ const Icon: React.SFC<{
       return <Delete {...childProps} />;
     case 'DeleteProfile':
       return <DeleteProfile {...childProps} />;
+    case 'Download':
+      return <Download {...childProps} />;
     case 'DropDown':
       return <DropDown {...childProps} />;
     case 'Edit':
@@ -134,8 +142,12 @@ const Icon: React.SFC<{
       return <Help {...childProps} />;
     case 'Home':
       return <Home {...childProps} />;
+    case 'Info':
+      return <Info {...childProps} />;
     case 'Language':
       return <Language {...childProps} />;
+    case 'List':
+      return <List {...childProps} />;
     case 'Lock':
       return <Lock {...childProps} />;
     case 'Logout':
