@@ -418,7 +418,9 @@ exports[`<Icon /> rendered correctly with HealthEngineWithText fixture 1`] = `
   name="HealthEngineWithText"
   shadow={false}
 >
-  <HealthEngineWithText />
+  <HealthEngineWithText
+    className="icon"
+  />
 </Icon>
 `;
 
